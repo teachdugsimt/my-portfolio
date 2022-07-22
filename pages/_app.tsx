@@ -13,6 +13,7 @@ import Head from "next/head";
 import Script from "next/script";
 
 function MyApp({ Component, pageProps }: AppProps) {
+  const seoTitle = "Tuntikorn | Portfolio"
   return (
     <>
       <Script
@@ -31,13 +32,13 @@ function MyApp({ Component, pageProps }: AppProps) {
                 `}
       </Script>
       <NextSeo
-        title="Anurag | Frontend Developer"
-        titleTemplate="Anurag | Frontend Developer"
-        defaultTitle="Anurag | Frontend Developer"
+        title={seoTitle}
+        titleTemplate={seoTitle}
+        defaultTitle={seoTitle}
         description="Hey! I'm Anurag, A Frontend Developer, Blogger and a Student!"
         openGraph={{
           url: "https://www.anurag.tech/",
-          title: "Anurag | Frontend Developer",
+          title: seoTitle,
           description:
             "Hey! I'm Anurag, A Frontend Developer, Blogger and a Student!",
           images: [
@@ -45,7 +46,7 @@ function MyApp({ Component, pageProps }: AppProps) {
               url: "https://res.cloudinary.com/ddum5vpp3/image/upload/v1643532760/og-image_dwcwhp.png",
               width: 800,
               height: 420,
-              alt: "Anurag | Frontend Developer",
+              alt: seoTitle,
             },
           ],
         }}
