@@ -43,7 +43,7 @@ function MyApp({ Component, pageProps }: AppProps) {
             "Hey! I'm Anurag, A Frontend Developer, Blogger and a Student!",
           images: [
             {
-              url: "https://res.cloudinary.com/ddum5vpp3/image/upload/v1643532760/og-image_dwcwhp.png",
+              url: "https://arttist-portfolio.s3.ap-southeast-1.amazonaws.com/title-and-header/logo-portfolio.png",
               width: 800,
               height: 420,
               alt: seoTitle,
