@@ -64,7 +64,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         ]}
       />
       <Head>
-        <link rel="icon" type="image/png" href="/assests/avatar.png" />
+        <link rel="icon" type="image/png" href="https://arttist-portfolio.s3.ap-southeast-1.amazonaws.com/title-and-header/logo-portfolio.png" />
       </Head>
       <Component {...pageProps} />
     </>
