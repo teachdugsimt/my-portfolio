@@ -16,7 +16,7 @@ const About: NextComponentType = () => {
         </p>
 
         <Col className="mt-4 text-gray-400">
-          Building Web apps and cross platform mobile application, manage database and some AWS infrastructor. Main stack use nodeJS, react, react-native
+          Building Web apps and cross platform mobile application, manage database and some AWS infrastructor. Main stack use node JS, react JS, react-native
           and java springboot. See more below.
         </Col>
 

@@ -1,37 +1,57 @@
 import type { NextComponentType } from "next";
-
+import React, { CSSProperties } from 'react'
 import Link from "next/link";
+import { Collapse, Carousel } from 'antd'
+
+const { Panel } = Collapse;
+
+const text = `
+  A dog is a type of domesticated animal.
+  Known for its loyalty and faithfulness,
+  it can be found as a welcome guest in many households across the world.
+`;
+
+const contentStyle: CSSProperties = {
+  height: '160px',
+  color: '#fff',
+  lineHeight: '160px',
+  textAlign: 'center',
+  background: '#364d79',
+};
 
 const Projects: NextComponentType = () => {
+  const onChange = (currentSlide: number) => {
+    console.log(currentSlide);
+  };
   return (
     <div className="my-16 px-3 font-sen" id="projects">
-      <p className="text-3xl font-bold text-white">Featured Projects</p>
-      <div className="my-8 flex flex-col items-center justify-center gap-10 sm:flex-row">
-        <Link href="https://vault3.live" passHref>
-          <a
-            className="h-[7rem] w-[14rem] cursor-pointer rounded-lg bg-gradient-to-r from-[#D8B4FE] to-[#818CF8] p-1 text-white duration-100 hover:scale-105"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <div className="flex h-full w-full flex-col items-center justify-center rounded-lg bg-primary px-2 text-center font-medium">
-              <p className="text-xl font-semibold">Vault3</p>
-              <p>Your safest decentralized vault</p>
-            </div>
-          </a>
-        </Link>
+      <p className="text-3xl font-bold text-white">Projects</p>
 
-        <Link href="https://github.com/avneesh0612/Orbits-UI" passHref>
-          <a
-            className="h-[7rem] w-[14rem] cursor-pointer rounded-lg bg-gradient-to-r from-[#FDE68A] via-[#FCA5A5] to-[#FECACA] p-1 text-white duration-100 hover:scale-105"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <div className="flex h-full w-full flex-col items-center justify-center rounded-lg bg-primary px-2 text-center font-medium">
-              <p className="text-xl font-semibold">Orbits UI</p>
-              <p>React component library built with Tailwind CSS</p>
-            </div>
-          </a>
-        </Link>
+      <div className="text-md my-8 flex flex-col font-medium md:text-xl custom:text-lg">
+        <Collapse>
+          <Panel header="This is panel header 1" key="1">
+            <Carousel afterChange={onChange}>
+              <div>
+                <h3 style={contentStyle}>1</h3>
+              </div>
+              <div>
+                <h3 style={contentStyle}>2</h3>
+              </div>
+              <div>
+                <h3 style={contentStyle}>3</h3>
+              </div>
+              <div>
+                <h3 style={contentStyle}>4</h3>
+              </div>
+            </Carousel>
+          </Panel>
+          <Panel header="This is panel header 2" key="2">
+            <p>{text}</p>
+          </Panel>
+          <Panel header="This is panel header 3" key="3">
+            <p>{text}</p>
+          </Panel>
+        </Collapse>
       </div>
     </div>
   );

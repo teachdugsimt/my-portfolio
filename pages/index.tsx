@@ -18,8 +18,8 @@ const Home: NextPage = () => {
       <Projects />
       <Contact />
 
-      <div className="flex justify-center">
-        <NowPlaying />
+      <div className="flex justify-center height:50">
+        {/* <NowPlaying /> */}
       </div>
     </div>
   );

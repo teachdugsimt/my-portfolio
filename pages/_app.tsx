@@ -1,6 +1,6 @@
 import type { AppProps } from "next/app";
+import 'antd/dist/antd.css'
 import "../styles/globals.css";
-
 import "@fontsource/jost/400.css";
 import "@fontsource/jost/500.css";
 import "@fontsource/jost/600.css";

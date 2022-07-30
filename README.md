@@ -6,7 +6,6 @@
 
 ![demo](./public/assests/docs/demo.jpg)
 
-✨ [Live Demo](https://anurag.tech)
 
 ### Using the template
 
@@ -17,8 +16,7 @@ To use this template, read and follow the steps given in the [Using Guide](./USI
 😊 Anurag
 
 - [Portfolio](https://anurag.tech)
-- [Github](https://github.com/kr-anurag)
+- [Github](https://github.com/teachdugsimt)
 - [Twitter](https://twitter.com/imanuraglol)
-- [Blog](https://blog.anurag.tech)
 
 Give a star ⭐ to show your support :P
